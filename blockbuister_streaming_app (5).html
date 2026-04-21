@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BLOCKBUSTER</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box}
+body{margin:0;font-family:'Poppins',sans-serif;background:#0b0f2a;color:white}
+header{position:fixed;width:100%;top:0;display:flex;justify-content:space-between;align-items:center;padding:15px 30px;background:rgba(0,0,0,0.9);z-index:10}
+.logo{font-size:24px;font-weight:600;color:#ffd700}
+
+.hero{margin-top:70px;height:70vh;display:flex;flex-direction:column;justify-content:center;padding:40px;background:linear-gradient(to right, rgba(0,0,0,0.9), rgba(0,0,0,0.2)), url('https://image.tmdb.org/t/p/original/9yBVqNruk6Ykrwc32qrK2TIE5xw.jpg');background-size:cover}
+.hero h1{font-size:50px;margin:0}
+.hero p{font-size:18px;margin:10px 0}
+
+.section{padding:30px}
+.row{display:flex;gap:15px;overflow-x:auto}
+.card{min-width:200px;background:#111;border-radius:10px;overflow:hidden}
+.card img{width:100%}
+.card .info{padding:10px}
+.card h4{margin:5px 0}
+.card p{font-size:13px;color:#ccc}
+
+.pricing-section{padding:40px;background:#0f1635}
+.pricing{display:flex;justify-content:center;gap:20px;flex-wrap:wrap}
+.plan{background:#1a237e;padding:25px;border-radius:15px;width:260px}
+.plan.popular{border:2px solid #ffd700}
+.plan h3{color:#ffd700}
+.plan button{margin-top:10px;padding:10px;border:none;background:#ffd700;width:100%}
+
+.faq{padding:40px}
+.faq p{color:#ccc}
+
+footer{text-align:center;padding:20px;color:#aaa}
+</style>
+</head>
+<body>
+
+<header>
+<div class="logo">BLOCKBUSTER</div>
+</header>
+
+<div class="hero">
+<h1>Disfruta sin límites</h1>
+<p>Películas y series cuando quieras.</p>
+</div>
+
+<div class="section">
+<h2>Tendencias</h2>
+<div class="row">
+
+<div class="card">
+<img src="https://image.tmdb.org/t/p/w300/6ELJEzQJ3Y45HczvreC3dg0GV5R.jpg">
+<div class="info"><h4>Interstellar</h4><p>Exploradores viajan por un agujero de gusano para salvar a la humanidad.</p></div>
+</div>
+
+<div class="card">
+<img src="https://image.tmdb.org/t/p/w300/qJ2tW6WMUDux911r6m7haRef0WH.jpg">
+<div class="info"><h4>The Dark Knight</h4><p>Batman enfrenta al Joker, quien desata el caos en Gotham.</p></div>
+</div>
+
+<div class="card">
+<img src="https://image.tmdb.org/t/p/w300/8UlWHLMpgZm9bx6QYh0NFoq67TZ.jpg">
+<div class="info"><h4>Inception</h4><p>Un ladrón roba secretos infiltrándose en sueños.</p></div>
+</div>
+
+</div>
+</div>
+
+<div class="section">
+<h2>Acción</h2>
+<div class="row">
+
+<div class="card">
+<img src="https://image.tmdb.org/t/p/w300/rTh4K5uw9HypmpGslcKd4QfHl93.jpg">
+<div class="info"><h4>Avengers</h4><p>Los héroes más poderosos se unen para salvar el mundo.</p></div>
+</div>
+
+<div class="card">
+<img src="https://image.tmdb.org/t/p/w300/9O1Iy9od7H4Fh1p9jKcS1nL8g9P.jpg">
+<div class="info"><h4>John Wick</h4><p>Un asesino regresa para vengarse.</p></div>
+</div>
+
+</div>
+</div>
+
+<div class="section">
+<h2>Comedia</h2>
+<div class="row">
+
+<div class="card">
+<img src="https://image.tmdb.org/t/p/w300/7WsyChQLEftFiDOVTGkv3hFpyyt.jpg">
+<div class="info"><h4>Deadpool</h4><p>Un mercenario con humor irreverente busca venganza.</p></div>
+</div>
+
+<div class="card">
+<img src="https://image.tmdb.org/t/p/w300/2TeJfUZMGolfDdW6DKhfIWqvq8y.jpg">
+<div class="info"><h4>Superbad</h4><p>Dos amigos viven una noche caótica antes de graduarse.</p></div>
+</div>
+
+</div>
+</div>
+
+<!-- PLANES -->
+<div class="pricing-section">
+<h2 style="text-align:center">Planes de suscripción</h2>
+<div class="pricing">
+
+<div class="plan">
+<h3>Básico</h3>
+<p>S/15 al mes</p>
+<p>Ideal para uso personal con acceso completo.</p>
+<button>Elegir</button>
+</div>
+
+<div class="plan popular">
+<h3>Pro — Más elegido</h3>
+<p>S/27 al mes</p>
+<p>Perfecto para familias con mejor calidad y más dispositivos.</p>
+<button>Elegir</button>
+</div>
+
+<div class="plan">
+<h3>Premium</h3>
+<p>S/35 al mes</p>
+<p>Experiencia total con 4K y múltiples dispositivos.</p>
+<button>Elegir</button>
+</div>
+
+</div>
+</div>
+
+<!-- FAQ -->
+<div class="faq">
+<h2>Preguntas frecuentes</h2>
+<p><strong>¿Puedo cancelar?</strong> Sí, en cualquier momento.</p>
+<p><strong>¿Hay prueba gratis?</strong> Sí, primer mes gratis.</p>
+<p><strong>¿Dónde funciona?</strong> En todos tus dispositivos.</p>
+</div>
+
+<footer>© 2026 BLOCKBUSTER</footer>
+
+</body>
+</html>
